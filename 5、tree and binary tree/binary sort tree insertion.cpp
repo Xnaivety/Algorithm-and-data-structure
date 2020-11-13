@@ -22,3 +22,11 @@ int bst_insert(bitree &T, int n) {
         }
     }
 }
+
+//二叉排序树的构造
+void create_bst(bitree &T, int s[], int n) {
+    T = NULL;
+    for (int i = 0; i < n; i++) {
+        bst_insert(T, s[i]);
+    }
+}
